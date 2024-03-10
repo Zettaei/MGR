@@ -1,0 +1,7 @@
+[
+    { "label": "Playing", "class": "success" },
+    { "label": "Completed", "class": "primary" },
+    { "label": "Pause", "class": "secondary" },
+    { "label": "Dropped", "class": "danger" },
+    { "label": "Planned", "class": "info" }
+]

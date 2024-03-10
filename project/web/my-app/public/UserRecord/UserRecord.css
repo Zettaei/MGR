@@ -1,0 +1,23 @@
+.UserRecord {}
+
+.UserRecord .Username.Link {
+    text-decoration: none; 
+}
+
+.UserRecord .UserGameRecordBlock:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.UserRecord .UserGameRecordBlockDisabled {
+    background-color: lightgray;
+}
+
+.UserRecord .UserGameRecordBlock .GameImage {
+    width: 100px;
+    cursor: pointer;
+}
+
+.UserRecord .UserGameRecordBlock .GameImage:hover {
+    opacity: 0.9;
+    scale: 0.96;
+}

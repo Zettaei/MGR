@@ -1,0 +1,29 @@
+.GameBlock {
+    height: 150px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.GameBlock:hover {
+    border-color: gold;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);;
+}
+
+.GameBlock .GameImage {
+    width: 105px;
+    height: 140px;
+}
+
+.GameBlock .GameName {
+    font-size: 1rem;
+}
+
+.GameBlock .GameFirstReleasedYear {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.GameBlock .GamePlatformAbbreviation {
+    font-size: 0.8rem;
+    font-weight: bold;
+}

@@ -1,0 +1,7 @@
+.ReviewPage .GameDetailBlock .GameImage {
+    width: 110px;
+}
+
+.ReviewPage .ReviewText {
+    white-space: pre-line;
+}

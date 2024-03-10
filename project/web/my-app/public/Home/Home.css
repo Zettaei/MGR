@@ -1,0 +1,18 @@
+.RecentModifiedGameBlock {
+    height: 100px;
+}
+
+.RecentModifiedGameBlock .GameImage {
+    height: 99px;
+}
+
+.RecentModifiedGameBlock .GameImage:hover {
+    transform: scale(0.96);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.GameLink {
+    cursor: pointer;
+}
+

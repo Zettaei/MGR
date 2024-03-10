@@ -1,0 +1,19 @@
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+
+#score-select:hover, #favorite-checkbox:hover,
+#platform-select:hover, #platform-store-select:hover {
+    cursor: pointer;
+}
+
+.record-block {
+    cursor: pointer;
+}
+
+.record-block:hover {
+    border: 1px solid goldenrod;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}

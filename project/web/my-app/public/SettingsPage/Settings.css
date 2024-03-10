@@ -1,0 +1,23 @@
+.Settings .username, .tag {
+    width: 380px;
+}
+
+.Settings .username > .title, .tag > .title {
+    width: 100px;
+}
+
+.Settings .currentPassword, .newPassword, .repeatPassword {
+    width: 420px;
+}
+
+.Settings .currentPassword .title, .newPassword .title, .repeatPassword .title {
+    width: 150px;
+}
+
+.Settings .submitButton {
+    width: 180px !important;
+}
+
+.Settings .AboutMeBox {
+    height: 250px;
+}
