@@ -38,7 +38,6 @@ function SearchBlock({ key, setKey }) {
         if (searchURL.gameURL() != undefined) {
             let decodedArr = [];
             decodedArr = decodeURI(locate.pathname).split(/^(\/search\/)(.*)\/(\d+)$/);
-            console.log("mount ", decodedArr);
             if (decodedArr.length <= 1) {
                 navigate(locate.pathname + "/1");
             }
@@ -50,7 +49,6 @@ function SearchBlock({ key, setKey }) {
         setIsLoading(true);
         keepList.reset();
         let decodedArr = decodeURI(locate.pathname).split(/^(\/search\/)(.*)\/(\d+)$/);
-        console.log("effect " + decodedArr[2]);
         if (decodedArr[3] < 1) {
             decodedArr[3] = 1;
             navigate(locate.pathname.slice(0, locate.pathname.lastIndexOf("/")) + "/1");

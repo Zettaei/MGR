@@ -14,7 +14,6 @@ function AddGameModal({ keepList }) {
 
     function clearInput() {
         for (let i = 0; i < formRef.length; ++i) {
-            console.log(i)
             formRef[i].value = "";
         }
     }

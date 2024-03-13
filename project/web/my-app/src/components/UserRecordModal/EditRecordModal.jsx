@@ -121,7 +121,6 @@ function EditRecordModal({ keepList, platformStoreList, record }) {
                             });
 
                         }
-                        console.log(keepList.userRecord());
 
                         closeModal("EditRecordModal");
                         return true;

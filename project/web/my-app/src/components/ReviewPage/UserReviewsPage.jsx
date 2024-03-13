@@ -16,7 +16,6 @@ function UserProfileReviewPage() {
     const [userInfo, setUserInfo] = createSignal({});
 
     async function fetchReviews(username, tag, pageth) {
-        console.log(username, tag);
         return await Axios.get(config.api_path + ("/user/" + username + "/" + tag + "/reviews/" + pageth))
             .then((res) => {
                 if (res.status === 200) {

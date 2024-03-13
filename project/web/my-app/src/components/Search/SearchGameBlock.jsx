@@ -33,10 +33,7 @@ function SearchGameBlock({ game }) {
                         <span className="GamePlatformAbbreviation">{(game().platforms?.map((platform) => platform.abbreviation))?.join(" | ")}</span>
                     </div>
                 </div>
-
-                {/* <div className="col-2 d-flex" onClick={() => { console.log("nah") }}>
-                    <button className="w-100 h-75 align-self-center btn btn-warning"></button>
-                </div> */}
+                
             </div>
         </div>
     );

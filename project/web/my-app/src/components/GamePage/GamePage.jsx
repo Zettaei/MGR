@@ -41,7 +41,6 @@ function GamePage() {
         const gameId = decodedArr[2];
         if (keepList.gameDetail().id !== Number(gameId)) {
             const response = await fetchGamePage(gameId);
-            console.log(response);
             keepList.setGameDetail(response.gameDetail);
             keepList.setUserGameRecord(response.userGameRecord);
             keepList.setUserRecord(response.userRecord);

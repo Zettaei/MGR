@@ -37,7 +37,6 @@ function ReviewEditModal({ keepList }) {
                         });
                         reviewInput.value = res.data.review;
                         
-                        console.log(keepList.ownReview())
                         closeModal("ReviewEditModal");
                         return true;
                     }

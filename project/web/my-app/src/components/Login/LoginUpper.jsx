@@ -70,7 +70,6 @@ function LoginUpper() {
                         username: res.data.user.username,
                         tag: res.data.user.tag
                     });
-                    console.log("login", user.currentUser());
                     window.sessionStorage.removeItem("mgl");
                     navigate("/");
                 }
@@ -98,9 +97,6 @@ function LoginUpper() {
                     setWarning("Email or Password incorrected or don't exist.");
                 }
             })
-
-
-        console.log("loginUpper", user.currentUser());
 
 
         ///// vvvv THIS IS THE WAY TO DO REFRESHABLE?????? LETS GOOOOO
