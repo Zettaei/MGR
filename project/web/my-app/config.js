@@ -1,4 +1,6 @@
 const config = {
+    api_path: "http://localhost:3000",
+    
     MIN_USERNAME_LENGTH: 2,
     MAX_USERNAME_LENGTH: 24,
     MIN_PASSWORD_LENGTH: 6,
@@ -22,17 +24,9 @@ const config = {
 
     REVIEWS_SEARCHED_PER_PAGE: 20,
 
-    USERINFO_SESSIONSTORAGE_NAME: "mgr_u",
-
     SWAL_SUCCESS_TIMER_2: 2000,
     SWAL_SUCCESS_TIMER_3: 3000,
     SWAL_SUCCESS_TIMER_4: 4000,
-
-
-
-    api_path: "http://localhost:3000",
-
-    token_name: "",
 
     auth_header: (currentUser) => {
         return {
