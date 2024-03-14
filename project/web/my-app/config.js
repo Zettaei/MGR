@@ -1,6 +1,6 @@
 const config = {
     api_path: "http://localhost:3000",
-    
+
     MIN_USERNAME_LENGTH: 2,
     MAX_USERNAME_LENGTH: 24,
     MIN_PASSWORD_LENGTH: 6,

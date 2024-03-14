@@ -2,9 +2,10 @@ import Swal from "sweetalert2";
 
 function SwalError(err) {
     Swal.fire({
-        title: "error",
+        title: "Error",
         html: err.message,
-        position: "center"
+        position: "center",
+        color: "red"
     });
 }
 

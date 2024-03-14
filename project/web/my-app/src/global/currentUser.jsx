@@ -1,7 +1,7 @@
 import { createSignal } from "solid-js";
 import Axios from "axios";
 import config from "../../config";
-import AuthAxiosFunc from "../utils/AuthAxiosFunc";
+import Swal from "sweetalert2";
 
 const [currentUser, setCurrentUser] = createSignal({});
 const [isLogin, setIsLogin] = createSignal(null);
@@ -23,7 +23,14 @@ async function fetchCurrentUser() {
                 setCurrentUser(newSession);
             })
             .catch((err) => {
-                if (err.response.status === 401) {
+                if(!err.response) {
+                    Swal.fire({
+                        title: "Network Error",
+                        html: "Something wrong with Network could be from either server or your side",
+                        color: "red"
+                    });
+                }
+                else if (err.response.status === 401) {
                     setIsLogin(false);
                 }
             })
