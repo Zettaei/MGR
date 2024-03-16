@@ -195,8 +195,8 @@ app.post("/login", async (req, res) => {
             expires: new Date(Date.now() + refreshLast)
         })
 
-        console.log("re", refreshToken);
-        console.log("ac", accessToken);
+        
+        
 
 
         res.send({

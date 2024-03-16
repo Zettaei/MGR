@@ -101,7 +101,7 @@ app.post("/record/user/recent", Token.validateUser, async (req, res) => {
         return res.send({ game: result, avg: parseFloat(averageScore).toFixed(2) });
     }
     catch (err) {
-        console.log(err);
+        
         res.status(500).send({ message: err.message, error: "unknown" });
     }
 });
@@ -339,7 +339,7 @@ app.post("/record/game/add", Token.validateUser, async (req, res) => {
 
 app.put("/record/game/update", Token.validateUser, async (req, res) => {
     try {
-        console.log(req.body);
+        
 
         const userGameRecord_id = (await UserRecordGameModel.findOne({
             where: {

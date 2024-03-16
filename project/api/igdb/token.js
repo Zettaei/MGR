@@ -34,7 +34,7 @@ async function getIGDBtoken() {
                 return data;
             });
 
-        console.log("#igdb access: " + token);
+        
 
         if (!token || token.length < 5) {
             token = await requestNewOathToken();
@@ -43,7 +43,7 @@ async function getIGDBtoken() {
         return token;
     }
     catch (err) {
-        console.log("TWITCH_OATH | " + err.message);
+        
         return null;
     }
 }

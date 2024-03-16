@@ -81,7 +81,7 @@ app.get("/user/:username/:tag", async (req, res) => {
             }
         });
 
-        console.log(find);
+        
 
         await Promise.all([reviewsCount, gamesCount])
             .then((values) => {

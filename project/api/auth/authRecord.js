@@ -44,7 +44,8 @@ function validateRecordOwner(req, res, next) {
             // throw new TokenError("expired");
         }
 
-        ///////// THIS MIDDLEWARE KEEP THROWING ERROR SOMETIMES
+
+        ///////// THIS MIDDLEWARE KEEP THROWING ERROR SOMETIMES, IDK WHY + I'M LAZY SO I JUST IGNORE IT FOR NOW
 
         UserModel.findOne({
             where: {
@@ -57,7 +58,6 @@ function validateRecordOwner(req, res, next) {
                 req.record.user_id = data.id;
                 req.record.username = username;
                 req.record.tag = tag;
-                console.log(req.record);
                 next();
             })
     }

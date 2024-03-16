@@ -41,21 +41,21 @@ function splitRefreshToken(fullRefreshToken) {
 
 function verifyAccessToken(req, res) {
     try {
-        console.log(req.headers.authorization);
-        console.log("verify Access"); ////
+        
+        
         let access = "";
         if (req.headers.authorization) {
             access = req.headers.authorization.split(" ")[1];
         }
         // token valid
         if (JWT.verify(access, tokenConfig.ACCESS_SECRET)) {
-            console.log("continue"); ////
+            
             return true;
         }
     }
     catch (err) {
         if (err instanceof JWT.TokenExpiredError || err instanceof JWT.JsonWebTokenError) {
-            console.log("verify Refresh"); ////
+            
             return verifyRefreshToken(res, req.cookies.token);
         }
         else {
@@ -67,7 +67,7 @@ function verifyAccessToken(req, res) {
 // will force res.send "refresh" if the refresh token is valid
 function verifyRefreshToken(res, fullToken) {
     try {
-        console.log ("FULLTOKEN: " + fullToken);
+        
 
         if (!fullToken || fullToken === "") {
             throw new TokenError("no token");
