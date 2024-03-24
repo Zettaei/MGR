@@ -1,4 +1,4 @@
-1. "npm install" on Terminal and change Directory to this folder to install all dependencies necessary for running server
+1. open Terminal and change Directory to this folder and enter "npm install" to install all dependencies necessary for running server
 
 3. in .env
  - change all DB_* according to your PostgreSQL database
