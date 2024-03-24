@@ -12,11 +12,11 @@ to install all dependencies necessary for running server
 ```bash
 npm run dev
 ```
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
 ##################### Solid JS (for Deployment part) #####################
 
 ```bash
