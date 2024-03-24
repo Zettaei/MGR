@@ -12,12 +12,15 @@ to install all dependencies necessary for running server
 ```bash
 npm run dev
 ```
+to start/run the web
 <br>
 <br>
 <br>
 <br>
 <br>
-##################### Solid JS (for Deployment part) #####################
+
+<details>
+ <summary>##################### Solid JS (for Deployment part) #####################</summary>
 
 ```bash
 npm run build
@@ -30,3 +33,4 @@ Your app is ready to be deployed!
 
 ## Deployment
 Learn more about deploying your application with the [documentations](https://vitejs.dev/guide/static-deploy.html)
+</details>
