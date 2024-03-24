@@ -3,3 +3,6 @@ when booting the server with "npm start" fetching data will took quite sometimes
 
 in .env
  - change ALTER to 'true' for the first time server start then change it to 'false'
+
+
+SECRET can be change to anything before the registration start, <b>once someone registered this must not be changed</b>
