@@ -13,7 +13,7 @@ to install all dependencies necessary for running server
 npm run dev
 ```
 
-################################################ Solid JS #######################################
+##################### Solid JS #####################
 
 ### `npm run build`
 
