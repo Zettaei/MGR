@@ -1,19 +1,19 @@
-## Usage
-
+1. open Terminal and change directory to this folder and enter
 ```bash
-$ npm install # or pnpm install or yarn install
+npm install
+```
+to install all dependencies necessary for running server
+ 
+2. in config.js
+ - everything <b>can be changed but still have to be the same as server if exist</b>, can be changed after first run but <b>must be the same value as server if exist</b>
+ - <b>api_path must be your database address</b>
+
+3. open Terminal and change directory to this folder and enter
+```bash
+npm run dev
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm run dev`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+################################################ Solid JS #######################################
 
 ### `npm run build`
 
