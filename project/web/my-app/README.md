@@ -5,7 +5,7 @@ npm install
 to install all dependencies necessary for running server
  
 2. in config.js
- - everything <b>can be changed but still have to be the same as server if exist</b>, can be changed after first run but <b>must be the same value as server if exist</b>
+ - everything <b>can be changed but still have to be the same as in the server's config.js if exist</b>, can be changed after first run but <b>must be the same value as in the server's config.js if exist</b>
  - <b>api_path must be your database address</b>
 
 3. open Terminal and change directory to this folder and enter
