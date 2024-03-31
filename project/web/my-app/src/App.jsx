@@ -25,6 +25,7 @@ function App() {
       }
       }>
         <Router >
+        
           <Route path="/" component={() => <Navbar><Home /></Navbar>} />
           <Show when={user.currentUser().username && user.currentUser().tag} fallback={
             <>
